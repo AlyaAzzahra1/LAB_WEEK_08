@@ -15,8 +15,8 @@ class FirstWorker(
         //Get the parameter input
         val id = inputData.getString(INPUT_DATA_ID)
 
-        //Sleep the process for 3 seconds
-        Thread.sleep(3000L)
+        //Sleep the process for 1 second (ACCELERATED FOR STABILITY)
+        Thread.sleep(1000L)
 
         //Build the output based on process result
         val outputData = Data.Builder()

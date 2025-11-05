@@ -11,7 +11,8 @@ class SecondWorker(
 
     override fun doWork(): Result {
         val id = inputData.getString(INPUT_DATA_ID)
-        Thread.sleep(3000L)
+        //Sleep the process for 1 second (ACCELERATED FOR STABILITY)
+        Thread.sleep(1000L)
         val outputData = Data.Builder()
             .putString(OUTPUT_DATA_ID, id)
             .build()
